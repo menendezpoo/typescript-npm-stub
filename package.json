@@ -1,0 +1,32 @@
+{
+  "name": "typescript-npm-stub",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "mocha -u bdd -r ts-node/register test/**/*.spec.ts",
+    "coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menendezpoo/typescript-npm-stub.git"
+  },
+  "author": "Jmmp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menendezpoo/typescript-npm-stub/issues"
+  },
+  "homepage": "https://github.com/menendezpoo/typescript-npm-stub#readme",
+  "dependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/json-schema": "^7.0.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.12",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "nyc": "^14.1.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
