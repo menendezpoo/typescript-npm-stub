@@ -32,7 +32,7 @@ npm coverage
 ## Mark Idea IDE folders:
 Recommendation of (Right Click > Mark directory as > ...)
 
-- `html`: Resource Root
-- `html/static`: Excluded
+- `bin`: Excluded
+- `res`: Resources Root
 - `src`: Sources Root
 - `test`: Test Sources Root
