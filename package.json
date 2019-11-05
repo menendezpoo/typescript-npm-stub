@@ -4,7 +4,8 @@
   "description": "",
   "main": "bin/index.js",
   "scripts": {
-    "start": "node bin/index.js",
+    "build": "tsc",
+    "start": "node -e \"require('./bin/index.js').main()\"",
     "test": "mocha -u bdd -r ts-node/register --recursive test/**/*.ts",
     "coverage": "nyc npm test"
   },

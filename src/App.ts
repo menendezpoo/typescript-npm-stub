@@ -7,6 +7,6 @@ export class App{
     }
 
     private constructor(){
-        new Person("John", "Doe");
+        console.log(JSON.stringify(new Person("John", "Doe")));
     }
 }
