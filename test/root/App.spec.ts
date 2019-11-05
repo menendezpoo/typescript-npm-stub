@@ -1,5 +1,5 @@
 import {assert} from 'chai';
-import {App} from "../src/App";
+import {App} from "../../src/App";
 
 describe('App', function () {
     it('should Initialize', async function () {
