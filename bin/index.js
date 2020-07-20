@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.main = void 0;
 const App_1 = require("./App");
 exports.main = () => __awaiter(void 0, void 0, void 0, function* () {
     return App_1.App.initialize()
