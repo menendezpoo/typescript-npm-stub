@@ -26,7 +26,7 @@ npm test
 ```
 - Run Coverage:
 ```bash
-npm coverage
+npm run coverage
 ```
 
 ## Mark Idea IDE folders:
