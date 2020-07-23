@@ -10,16 +10,45 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.App = void 0;
-const Person_1 = require("./entities/Person");
+const Logger_1 = require("./util/Logger");
+const logger = new Logger_1.Logger('App');
 class App {
+    constructor() {
+        this.config = null;
+    }
+    static get instance() { return App._instance; }
     static initialize() {
         return __awaiter(this, void 0, void 0, function* () {
-            return new App();
+            if (App.instance) {
+                throw `Already Initialized`;
+            }
+            logger.info("Initializing");
+            const app = new App();
+            logger.info(`Loading config`);
+            yield app.initializeConfig();
+            App._instance = app;
+            return app;
         });
     }
-    constructor() {
-        console.log(JSON.stringify(new Person_1.Person("John", "Doe")));
+    initializeConfig() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.config = yield App.configProvider();
+        });
+    }
+    run() {
+        logger.info("Running!");
+    }
+    terminate() {
+        return __awaiter(this, void 0, void 0, function* () {
+            App._instance = null;
+        });
     }
 }
 exports.App = App;
+App._instance = null;
+App.configProvider = () => __awaiter(void 0, void 0, void 0, function* () {
+    return ({
+        port: 9090
+    });
+});
 //# sourceMappingURL=App.js.map

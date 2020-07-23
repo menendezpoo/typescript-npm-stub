@@ -1,5 +1,12 @@
 import {App} from "./App";
+import {Logger} from "./util/Logger";
 
-export const main = async () =>
-    App.initialize()
-        .catch( e => console.error("Failed to initialize", e));
+const logger = new Logger('main-index');
+
+export async function main() {
+
+    return App.initialize()
+        .then(app => app.run())
+        .catch(e => logger.error(`App failed: ${e}`));
+
+}
