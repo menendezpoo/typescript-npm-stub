@@ -1,5 +1,5 @@
 import {Config} from "./Config";
-import {Logger} from "./util/Logger";
+import {Logger} from "layer-logging";
 
 const logger = new Logger('App');
 

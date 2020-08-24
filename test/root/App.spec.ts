@@ -1,6 +1,6 @@
 import {assert} from 'chai';
 import {App} from "../../src/App";
-import {Logger} from "../../src/util/Logger";
+import {Logger} from "layer-logging";
 
 describe(`App`, function () {
 

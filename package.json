@@ -20,15 +20,17 @@
   },
   "homepage": "https://github.com/menendezpoo/typescript-npm-stub#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.11",
+    "@types/chai": "^4.2.12",
     "@types/json-schema": "^7.0.5",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.12.51",
+    "@types/node": "^12.12.54",
     "chai": "^4.2.0",
     "mocha": "^6.2.3",
     "nyc": "^14.1.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
-  "dependencies": {}
+  "dependencies": {
+    "layer-logging": "0.0.4"
+  }
 }

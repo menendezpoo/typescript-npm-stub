@@ -1,8 +1,8 @@
 import {assert} from 'chai';
 import {main} from "../../src";
 import {App} from "../../src/App";
-import {randomInt, randomWord} from "../../src/util/TestUtils";
-import {Logger} from "../../src/util/Logger";
+import {Logger} from "layer-logging";
+import {randomInt, randomWord} from "../TestUtils";
 
 describe('index', function () {
 
